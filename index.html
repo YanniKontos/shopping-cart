@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+   <!--this is the start of the nav bar-->
+    <nav>
+        <h1 class='nav-title' translate="no"><a href='#'>U-Shop</a></h1>
+        <ul class='nav-links'>
+            <li>
+                <a href='#'>
+                <i class="fas fa-shopping-basket"></i><span>Your Basket</span></a>
+            </li>
+        </ul>
+    </nav>
+    <!--this is the end of the nav bar-->
+
+    <!--middle section of the page, text and button-->
+    <div class="img-section">
+        <img src="/imgs/shopping-img.svg" alt="" class='main-image'>
+        <div class='image-text'>
+            <h1>New Products  <br>  Available Now!</h1> 
+            <i class="fas fa-shopping-cart" id='shopping-icon'></i>
+            <a href='#page-2'>
+            <button type="submit">Shop Now</button>
+        </a>
+        </div>
+    </div>
+    <!--end of the middle page section-->
+
+    <!--Start of second page-->
+    <div class="page-2" id='page-2'>
+        <h1 class='pg2-header'>Our </h1>
+        <h1 class='pg2-header-ending'>Stock</h1>
+       
+       <div class="page-2-img-desc">
+           <img src="/imgs/undraw_business_shop_qw-5-t.svg" alt="" class='page-2-und'>
+           <p class='page-2-und-text'>Shop From Our Variety Of Intricately Made Watches <br> 
+            Catered Specifically For The Customers</p>
+       </div>
+       
+        <h2 class='product-header'>Crafted With Perfection.</h2>
+      
+        <div class='product-page'>
+            <article>
+                <img class='product-image-1' src="/imgs//blue-gold rolex.webp">
+                <h2 class='rolex-blue'>Rolex Blue</h2>
+                    <span>$250.00</span> <br>
+                        <button type="submit">Add To Basket</button>
+            </article>
+
+
+            <article>
+                <img class='product-image-2' src="/imgs//blackr-rolex.webp" alt="">
+                <h2 class='rolex-black'>Rolex Black</h2>
+                    <span>$550.00</span> <br>
+                    <button type="submit">Add To Basket</button>
+
+            </article>
+
+            
+            <article>
+                <img class='product-image-3' src="/imgs//gem-rolex.webp" alt="">
+                <h2 class='rolex-silver'>Rolex Silver</h2> 
+                <span>$750.00</span> <br>
+                    <button type="submit" id='buy-now'>Add To Basket</button>
+            </article>    
+        </div>
+
+    </div>
+    <!--end of second page-->
+    
+</body>
+<script src="https://kit.fontawesome.com/a5c444f0a2.js" crossorigin="anonymous"></script>
+</html>
