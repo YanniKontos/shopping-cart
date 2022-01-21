@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping-App</title>
+    <link rel="shortcut icon" href="/imgs/copium.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="store.js"></script>
+    <script src="https://kit.fontawesome.com/a5c444f0a2.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
    <!--this is the start of the nav bar-->
     <nav>
-        <h1 class='nav-title' translate="no"><a href='index.html'>U-Shop</a></h1>
+        <h1 class='nav-title' translate="no"><a href='#'>U-Shop</a></h1>
         <ul class='nav-links'>
             <li>
-                <a href='basket.html'>
+                <a href='#page-3'>
                 <i class="fas fa-shopping-basket"></i><span>Your Basket</span></a>
             </li>
         </ul>
@@ -48,34 +51,50 @@
         <h2 class='product-header'>Crafted With Perfection.</h2>
       
         <div class='product-page'>
-            <article>
+            <article id ='item1'>
                 <img class='product-image-1' src="/imgs//blue-gold rolex.webp">
-                <h2 class='rolex-blue'>Rolex Blue</h2>
+                <h2 class='rolex-blue' id='title2'>Rolex Blue</h2>
                     <span>$250.00</span> <br>
-                        <button type="submit">Add To Basket</button>
+                        <button onclick='addItemToBasket("/imgs/\/blue-gold rolex.webp", "$250.00")'>Add To Basket</button>
             </article>
 
 
-            <article>
+            <article id ='item2'>
                 <img class='product-image-2' src="/imgs//blackr-rolex.webp" alt="">
-                <h2 class='rolex-black'>Rolex Black</h2>
-                    <span>$550.00</span> <br>
-                    <button type="submit">Add To Basket</button>
+                <h2 class='rolex-black' id='title2'>Rolex Black</h2>
+                    <span>$550.00</span> <br> 
+                    <button onclick='addItemToBasket("/imgs/\/blackr-rolex.webp", "$550.00")'>Add To Basket</button>
 
             </article>
 
             
-            <article>
+            <article id ='item3'>
                 <img class='product-image-3' src="/imgs//gem-rolex.webp" alt="">
-                <h2 class='rolex-silver'>Rolex Silver</h2> 
+                <h2 class='rolex-silver' id='title2'>Rolex Silver</h2> 
                 <span>$750.00</span> <br>
-                    <button type="submit" id='buy-now'>Add To Basket</button>
+                    <button onclick='addItemToBasket("/imgs/\/gem-rolex.webp", "$750.00")' id='buy-now'>Add To Basket</button>
             </article>    
         </div>
 
     </div>
     <!--end of second page-->
+
+    <!--Start of third page-->
+
+    <div class="page-3" id='page-3'>
+        <div class="home-page">
+            <a href="index.html">
+                <i class="fas fa-house-user"></i><span href="index.html">Home Page</span>
+            </a>
+        </div>
     
+        <div class="basket-headers">
+            <h1 class='basket-item-items'>Item/s</h1>
+            <h1 class='basket-item-price'>Price</h1>
+            <h1 class='basket-item-remove'>Remove</h1>
+        </div>
+    
+    </div>       
+
 </body>
-<script src="https://kit.fontawesome.com/a5c444f0a2.js" crossorigin="anonymous"></script>
 </html>
